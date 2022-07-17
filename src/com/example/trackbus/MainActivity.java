@@ -24,14 +24,6 @@ public class MainActivity extends Activity {
 			}},1500);
 		
 	}
-	// Declare static variables to hold string values for the names private  static final string DATABASE_NAME = "MyContacts.db";
-	 private static final String TABLE_NAME = "ContactDetails";
-	 // Declare an object of SQLiteDatabase
-	 private SQLiteDatabase sqlDB;
-	 // Write the following code inside the onCreate() method
-	 // Open the database if it exists otherwise create the MyContacts database  
-	 sqlDB=openOrCreateDatabase (DATABASE_NAME,SQLiteDatabase.CREATE_IF_NECESSARY, null);
-	 // Create a table with three columns: columns id, name, and phone
-	 sqlDB.execSQL("CREATE TABLE "+TABLE_NAME+"(id INTEGER PRIMARY KEY, Name TEXT, Phone LONG)");
+	
 }
 

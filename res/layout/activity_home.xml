@@ -4,50 +4,125 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:baselineAligned="false" 
+        android:background="@color/dgrey"
     tools:context="${relativePackage}.${activityClass}" 
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        
+        android:background="@color/dgrey"
+        android:layout_weight="2" >
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="@color/dgrey"
+        android:layout_height="match_parent"
+        
         android:gravity="center_vertical"
         android:marginEnd="10dp"
-        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
         android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8.12"
         android:orientation="vertical"
-        android:paddingTop="15dp"
-        android:layout_weight="10" >
+        android:background="@drawable/LayRound" >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:paddingEnd="10dp"
-            android:paddingTop="0dp"
-            android:layout_weight="3"  >
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  >
 
             <Button
                 android:id="@+id/button1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:paddingLeft="20dp"
-                android:text="Button" />
-
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Search\nBus"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="bottom"
+                android:background="@drawable/rounded_corner" />
             <Button
-                android:id="@+id/button2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:paddingLeft="30dp"
-                android:text="Button" />
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Book\nTicket"
+				android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="bottom"
+                android:background="@drawable/rounded_corner"  />
             
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+              >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Make\nTrip"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="bottom"
+                android:background="@drawable/rounded_corner"  />
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Package"
+				android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="bottom"
+                android:background="@drawable/rounded_corner"  />
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Regular\nCustomer"
+				android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="bottom"
+                android:background="@drawable/rounded_corner"  />
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Helpline"
+				android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="bottom"
+                android:background="@drawable/rounded_corner"  />
+            
+        </LinearLayout>
+        
 
     </LinearLayout>
     
